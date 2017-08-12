@@ -16,12 +16,16 @@ var TodoComponent = React.createClass({
       });
     return(
       <div id="todo-list">
-        <p>The busiest people have the most leisure...</p>
+        <p onClick={this.clicked}>The busiest people have the most leisure...</p>
         <ul>
           {todos}
         </ul>
       </div>
     );
+  },
+
+  clicked: function(){
+    console.log('you clicked me');
   }
 });
 
